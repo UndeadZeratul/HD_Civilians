@@ -1,4 +1,4 @@
-# HD_Civilians
+# Hideous Denizens
 "Hmmm, fresh victims for the ever-growing army of the undead..."
 
 This addon spawns civilians that wander around the map, hoping to avoid the hordes of monsters infesting the area. If you manage to reach them before they get slaughtered, pressing Use while standing in front of them will teleport them away to safety, leaving behind some ammo or medical supplies as a reward for rescuing them. 
