@@ -1,11 +1,11 @@
 AddOptionMenu "OptionsMenu"
 {
-    Submenu "HD Civilians Options", "HDCivvieOptions"
+    Submenu "Hideous Denizens Options", "HDCivvieOptions"
 }
 
 OptionMenu HDCivvieOptions
 {
-  Title "-= HD Civilians Options =-"
+  Title "-= Hideous Denizens Options =-"
 	Option "Civilians spawn in the wild:", "Civvie_EnableWorldSpawns", "OnOff"
 	Option "Civilians spawn as friendlies:", "Civvie_SpawnFriendly", "OnOff"
   Option "Civilians stay quiet:", "Civvie_StayQuiet", "OnOff"
