@@ -47,7 +47,7 @@ class DoctorLootSpawner:RandomSpawner{
 class HDCivilian : HDHumanoid
 {
   default{
-  obituary "%o was somehow killed by a scared civilian???";
+  obituary "%o upset a disgruntled civilian.";
 
   seesound "civvie/sight";
   painsound "civvie/pain";
@@ -63,7 +63,7 @@ class HDCivilian : HDHumanoid
   Tag "Civilian";
 
   -COUNTKILL
-  +NOTARGET
+  +MVISBLOCKED
   +MISSILEEVENMORE
   -FRIENDLY
   +FRIGHTENED
@@ -80,11 +80,11 @@ class HDCivilian : HDHumanoid
   override void postbeginplay(){
     super.postbeginplay();
   
-  // if set, civilians won't attack player,
-  // but will be attacked by monsters
+  // if set, civilians won't attack players
+  // and will run away from monsters, but they
+  // might take a swing at them if close enough
     if(Civvie_SpawnFriendly){
-      bfriendly=true;
-      bnotarget=false;
+      bFriendly=true;
     }
   }
 
@@ -99,8 +99,7 @@ class HDCivilian : HDHumanoid
       //enable rescue if friendly
       if(bfriendly&&!bUseSpecial){
         bUseSpecial=true;
-        bNoTarget=false;
-        bMISSILEEVENMORE=true;
+        bMissileEvenMore=true;
       }
     
       // evil civs are hostile and can't be 
@@ -113,8 +112,7 @@ class HDCivilian : HDHumanoid
         )bUseSpecial=true; // enable rescue if knocked down
       else if(!bfriendly&&bUseSpecial){
         bUseSpecial=false;
-        bNoTarget=true;
-        bMISSILEEVENMORE=false;
+        bMissileEvenMore=false;
       }
     }else bUseSpecial=false;//disable rescue if dead
   }
@@ -185,12 +183,15 @@ class HDCivilian : HDHumanoid
 		#### ABCD random(4,5) A_HDChase();
 		loop;
 		
-  missile:
+  	missile:
 		---- A 0 setstatelabel("see");
 	    
 	//civilians step back after attacking, so
 	//they don't just wail on you indefinitely
 	meleeend:
+		#### D 0 {bMVisBlocked=false;}
+		//attacking your captors is a quick way 
+		//to lose your "not dying" privileges
 		#### D 3 A_Recoil(frandom(2.,3.));
 		#### CBA 3;
 		#### A 0 setstatelabel("see");
