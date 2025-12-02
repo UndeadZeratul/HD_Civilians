@@ -3,24 +3,24 @@ server bool Civvie_EnableWorldSpawns = false;
 server bool Civvie_SpawnFriendly = true;
 server bool Civvie_StayQuiet = true;
 
-server bool Civvie_ReplaceZombiemanSpawns = false;
-server bool Civvie_ReplaceShotgunnerSpawns = false;
-server bool Civvie_ReplaceChaingunnerSpawns = false;
+server int Civvie_Zombieman_SpawnBias = -1;
+server int Civvie_Shotgunner_SpawnBias = -1;
+server int Civvie_Chaingunner_SpawnBias = -1;
 
-server bool Civvie_ReplaceImpSpawns = false;
-server bool Civvie_ReplaceDemonSpawns = false;
-server bool Civvie_ReplaceSpectreSpawns = false;
-server bool Civvie_ReplaceCacoSpawns = false;
-server bool Civvie_ReplaceSkullSpawns = false;
-server bool Civvie_ReplaceBaronSpawns = false;
+server int Civvie_Imp_SpawnBias = -1;
+server int Civvie_Demon_SpawnBias = -1;
+server int Civvie_Spectre_SpawnBias = -1;
+server int Civvie_Caco_SpawnBias = -1;
+server int Civvie_Skull_SpawnBias = -1;
+server int Civvie_Baron_SpawnBias = -1;
 
-server bool Civvie_ReplaceCybieSpawns = false;
-server bool Civvie_ReplaceSpidermindSpawns = false;
+server int Civvie_Cybie_SpawnBias = -1;
+server int Civvie_Spidermind_SpawnBias = -1;
 
-server bool Civvie_ReplaceGoatSpawns = false;
-server bool Civvie_ReplaceTronSpawns = false;
-server bool Civvie_ReplaceBonesSpawns = false;
-server bool Civvie_ReplaceMeatballSpawns = false;
-server bool Civvie_ReplaceMancSpawns = false;
-server bool Civvie_ReplaceArchieSpawns = false;
-server bool Civvie_ReplaceNaziSpawns = false;
+server int Civvie_Goat_SpawnBias = -1;
+server int Civvie_Tron_SpawnBias = -1;
+server int Civvie_Bones_SpawnBias = -1;
+server int Civvie_Meatball_SpawnBias = -1;
+server int Civvie_Manc_SpawnBias = -1;
+server int Civvie_Archie_SpawnBias = -1;
+server int Civvie_Nazi_SpawnBias = -1;
