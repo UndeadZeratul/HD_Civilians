@@ -129,8 +129,8 @@ override void CheckReplacement( ReplaceEvent Civvie ){
 							  )Civvie.Replacement = "CivvieDropper";
 						break;    
 
-    case 'Revenant'  : 	if(Civvie_Spidermind_SpawnBias>=0
-						   &&!random(0,Civvie_Spidermind_SpawnBias)
+    case 'Revenant'  : 	if(Civvie_Bones_SpawnBias>=0
+						   &&!random(0,Civvie_Bones_SpawnBias)
 						  )Civvie.Replacement = "CivvieDropper";
 						break;    
 	
