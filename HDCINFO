@@ -1,0 +1,34 @@
+// Civilian Spawn Table
+newSpawnTable => { "spawnName": "CivvieDropper", "tableName": "CivvieDropper" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie1", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie2", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie3", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie4", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie5", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie7", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "CivvieDoc1", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie1f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie2f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie3f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie4f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie5f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "Civvie6f", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieDropper", "name": "CivvieDoc2f", "weight": "5", "persists": "true" }
+
+// Civilian Drop Loot Tables
+newSpawnTable => { "spawnName": "CivvieLootSpawner", "tableName": "CivvieLootSpawner" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "ClipMagPickup", "weight": "20", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "ShellRandom", "weight": "15", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "CellRandom", "weight": "12", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "ShellBoxRandom", "weight": "10", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "CellPackReplacer", "weight": "3", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "RocketBoxRandom", "weight": "2", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "CivvieLootSpawner", "name": "ClipBoxPickup", "weight": "1", "persists": "true" }
+
+newSpawnTable => { "spawnName": "DoctorLootSpawner", "tableName": "DoctorLootSpawner" }
+addSpawnTableSingleEntry => { "tableName": "DoctorLootSpawner", "name": "PortableMedikit", "weight": "20", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "DoctorLootSpawner", "name": "PortableStimpack", "weight": "10", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "DoctorLootSpawner", "name": "HDHealingPotion", "weight": "5", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "DoctorLootSpawner", "name": "ShieldCore", "weight": "2", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "DoctorLootSpawner", "name": "PortableBerserkPack", "weight": "1", "persists": "true" }
+

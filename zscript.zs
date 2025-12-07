@@ -155,4 +155,17 @@ override void CheckReplacement( ReplaceEvent Civvie ){
     //always set this to false or else it screws with
     //monster replacements in other addons
     }
+
+    override void WorldThingDestroyed(WorldEvent e) {
+
+        if (e.thing is 'HDCivilian') {
+            let isdirectDeposit = Cvar.GetCVar('hdm_nonbounty_directdeposit');
+
+            if (isdirectDeposit && isdirectDeposit.GetBool()) {
+                HDCore.GiveToPlayers('MercenaryBucks', 25);
+            } else {
+                HDCore.SpawnStuff('MercenaryBucks25', e.thing.pos);
+            }
+        }
+    }
 }

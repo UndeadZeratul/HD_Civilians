@@ -1,46 +1,11 @@
 // civilian spawn randomizer
-class CivvieDropper:RandomSpawner{
-	default{
-    dropitem "Civvie1",256,5;
-    dropitem "Civvie2",256,5;
-    dropitem "Civvie3",256,5;
-    dropitem "Civvie4",256,5;
-    dropitem "Civvie5",256,5;
-    dropitem "Civvie7",256,5;
-    dropitem "CivvieDoc1",256,5;
-		dropitem "Civvie1f",256,5;
-    dropitem "Civvie2f",256,5;
-    dropitem "Civvie3f",256,5;
-    dropitem "Civvie4f",256,5;
-    dropitem "Civvie5f",256,5;
-    dropitem "Civvie6f",256,5;
-    dropitem "CivvieDoc2f",256,5;
-	}
-}
+class CivvieDropper:IdleDummy{}
 
 // regular civilian loot drops
-class CivvieLootSpawner:RandomSpawner{
-	default{
-    dropitem "ClipMagPickup",256,20;
-    dropitem "ShellRandom",256,15;
-    dropitem "CellRandom",256,12;
-    dropitem "ShellBoxRandom",256,10;
-    dropitem "CellPackReplacer",256,3;
-    dropitem "RocketBoxRandom",256,2;
-    dropitem "ClipBoxPickup",256,1;
-	}
-}
+class CivvieLootSpawner:IdleDummy{}
 
 // scientist/doctor loot drops
-class DoctorLootSpawner:RandomSpawner{
-	default{
-    dropitem "PortableMedikit",256,20;
-    dropitem "PortableStimpack",256,10;
-    dropitem "HDHealingPotion",256,5;
-    dropitem "ShieldCore",256,2;
-    dropitem "PortableBerserkPack",256,1;
-	}
-}
+class DoctorLootSpawner:IdleDummy{}
 
 // base civilian actor, all civilians 
 // should inherit from this
