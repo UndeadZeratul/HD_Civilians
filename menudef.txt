@@ -3,6 +3,11 @@ AddOptionMenu "OptionsMenu"
     Submenu "Hideous Denizens Options", "HDCivvieOptions"
 }
 
+AddOptionMenu "HDAddonMenu"
+{
+    Submenu "Hideous Denizens Options", "HDCivvieOptions"
+}
+
 OptionMenu HDCivvieOptions
 {
 	Title "-= Hideous Denizens Options =-"
